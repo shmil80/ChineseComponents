@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/goToPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:onClick="goToPrevious"
+            android:text="@string/previous"/>
+
+        <Button
+            android:id="@+id/goToNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:onClick="goToNext"
+            android:text="@string/next"/>
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:orientation="vertical"
+            tools:context="com.shmuel.chinesecomponents.ActivityLearnLetter"
+            >
+
+            <TextView
+                android:id="@+id/chinese_charachter"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_letter_chinese"
+                tools:text="四"/>
+
+            <ImageView
+                android:id="@+id/chinese_charachter_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+
+                android:maxHeight="200dp"
+                android:scaleType="centerInside"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pinyin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="50sp"
+                    tools:text="sì"/>
+
+                <TextView
+                    android:id="@+id/meaning"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="50sp"
+                    tools:text="ארבע"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/parts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                />
+
+            <Button
+                android:id="@+id/speak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="speech"
+                android:text="@string/speak"/>
+
+            <ImageView
+                android:id="@+id/shape"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxHeight="200dp"
+                android:scaleType="centerInside"
+                />
+
+            <TextView
+                android:id="@+id/storyMeaning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="20sp"
+                tools:text="The kidnapped boy was enclosed by the force-field on all four sides. "
+                />
+
+            <TextView
+                android:id="@+id/storyPronunciation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                tools:text="The dwarf, leading the rescue team, saluted when they found him (perhaps because he was the colonel’s son)"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

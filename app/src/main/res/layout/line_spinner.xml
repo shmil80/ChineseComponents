@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layoutDirection="rtl"
+          android:textDirection="rtl"
+          android:padding="1dp"
+          tools:text="1 一 אחד"
+          android:textColor="@android:color/black"
+          android:textSize="20sp"
+          android:paddingStart="30dp"
+          android:paddingLeft="30dp"/>
+
+

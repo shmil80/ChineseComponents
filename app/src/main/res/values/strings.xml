@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ChineseComponents</string>
+    <string name="previous">הקןדם</string>
+    <string name="next">הבא</string>
+    <string name="speak">השמע</string>
+    <string name="only_components">רק מרכיבים בסיסיים</string>
+    <string name="current_letter">אות נוכחית:</string>
+    <string-array name="bold_canstants">
+        <item>ענק</item>
+        <item>גמד</item>
+        <item>פיה</item>
+        <item>רובוט</item>
+        <item>דובי</item>
+        <item>חד קרן</item>
+        <item>תמנון</item>
+        <item>כוכב ים</item>
+        <item>צומת</item>
+        <item>מטוס</item>
+        <item>הארי</item>
+        <item>גלגל</item>
+    </string-array>
+</resources>
